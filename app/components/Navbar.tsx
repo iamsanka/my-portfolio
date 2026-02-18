@@ -48,25 +48,25 @@ export default function Navbar() {
           ☰
         </button>
       </div>
-
-      {/* Mobile Menu */}
+      {/* Mobile Menu (OUTSIDE nav) */}{" "}
       {open && (
-        <div className="md:hidden bg-primary px-6 pb-4 space-y-4 text-textMain">
+        <div className="md:hidden bg-secondary px-6 py-6 space-y-4 text-textMain border-b border-gray-700">
+          {" "}
           <Link href="#home" onClick={() => setOpen(false)}>
             Home
-          </Link>
+          </Link>{" "}
           <Link href="#about" onClick={() => setOpen(false)}>
             About
-          </Link>
+          </Link>{" "}
           <Link href="#projects" onClick={() => setOpen(false)}>
             Projects
-          </Link>
+          </Link>{" "}
           <Link href="#certifications" onClick={() => setOpen(false)}>
             Certifications
-          </Link>
+          </Link>{" "}
           <Link href="#contact" onClick={() => setOpen(false)}>
             Contact
-          </Link>
+          </Link>{" "}
         </div>
       )}
     </nav>
