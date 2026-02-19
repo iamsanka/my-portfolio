@@ -76,7 +76,7 @@ export default function Hero() {
           <a
             href="/CV_Sanka_De_Silva.pdf"
             download
-            className="inline-block bg-accent text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition"
+            className="inline-block bg-accent text-white dark:bg-accent dark:text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition"
           >
             Download CV
           </a>

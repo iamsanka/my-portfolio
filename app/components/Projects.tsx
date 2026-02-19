@@ -91,7 +91,7 @@ export default function Projects() {
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block mt-6 px-4 py-2 bg-accent text-white rounded-lg font-medium hover:bg-red-700 transition"
+              className="inline-block mt-6 px-4 py-2 bg-accent text-white dark:bg-accent dark:text-white rounded-lg font-medium hover:bg-red-700 transition"
             >
               View Project
             </a>
