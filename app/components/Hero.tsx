@@ -74,7 +74,7 @@ export default function Hero() {
             and more.
           </p>
 
-          <Button as="a" href="/CV_Sanka_De_Silva.pdf" download>
+          <Button as="a" href="/CV_SankaDeSilva.pdf" download>
             Download CV
           </Button>
         </div>
