@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import Image from "next/image";
 import { useCallback } from "react";
 import { loadSlim } from "tsparticles-slim";
+import Button from "./ui/Button";
 
 // Load particles ONLY on the client → prevents hydration errors
 const Particles = dynamic(() => import("react-tsparticles"), {
@@ -73,13 +74,9 @@ export default function Hero() {
             and more.
           </p>
 
-          <a
-            href="/CV_Sanka_De_Silva.pdf"
-            download
-            className="inline-block bg-accent text-white dark:bg-accent dark:text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition"
-          >
+          <Button as="a" href="/CV_Sanka_De_Silva.pdf" download>
             Download CV
-          </a>
+          </Button>
         </div>
       </div>
     </section>

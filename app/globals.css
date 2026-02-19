@@ -4,16 +4,34 @@ html {
   scroll-behavior: smooth;
 }
 
+/* LIGHT MODE */
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --secondary: #f5f5f5;
+  /* light card background */
+  --primary: #e5e5e5;
+  /* light subtle background */
+  --accent: #e63946;
+  /* your red accent */
+  --textMain: #171717;
+  /* black */
+  --textSub: #4b5563;
+  /* gray-600 */
 }
 
-
+/* DARK MODE */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+
+    --secondary: #0f0f0f;
+    --primary: #1a1a1a;
+    --accent: #e63946;
+    --textMain: #ffffff;
+    --textSub: #94a3b8;
   }
 }
 
