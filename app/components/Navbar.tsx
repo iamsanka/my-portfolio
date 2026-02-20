@@ -9,18 +9,22 @@ export default function Navbar() {
   return (
     <>
       {/* NAVBAR */}
-      <nav className="fixed top-0 left-0 w-full z-50 bg-white/90 dark:bg-secondary/95 backdrop-blur-sm border-b border-gray-300 dark:border-gray-700 shadow-lg">
+      <nav
+        className="
+          fixed top-0 left-0 w-full z-50 
+          bg-transparent 
+          backdrop-blur-md 
+          border-b border-transparent
+        "
+      >
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
           {/* Logo */}
-          <Link
-            href="/"
-            className="text-2xl font-bold text-black dark:text-textMain"
-          >
+          <Link href="/" className="text-2xl font-bold text-[var(--textMain)]">
             SanD
           </Link>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-8 text-black dark:text-textMain">
+          <div className="hidden md:flex space-x-8 text-[var(--textMain)]">
             <Link href="#home" className="hover:text-accent transition">
               Home
             </Link>
@@ -50,7 +54,7 @@ export default function Navbar() {
 
           {/* Hamburger Button */}
           <button
-            className="md:hidden text-black dark:text-textMain text-3xl transition-transform duration-300"
+            className="md:hidden text-[var(--textMain)] text-3xl transition-transform duration-300"
             onClick={() => setOpen(!open)}
           >
             {open ? "✕" : "☰"}
@@ -68,7 +72,7 @@ export default function Navbar() {
 
       {/* MOBILE MENU */}
       <div
-        className={`md:hidden fixed top-16 left-0 w-full bg-white/95 dark:bg-secondary/95 backdrop-blur-sm border-b border-gray-300 dark:border-gray-700 z-50 px-6 py-6 space-y-4 text-black dark:text-textMain transform transition-all duration-300 ${
+        className={`md:hidden fixed top-16 left-0 w-full bg-white/95 dark:bg-secondary/95 backdrop-blur-sm border-b border-gray-300 dark:border-gray-700 z-50 px-6 py-6 space-y-4 text-[var(--textMain)] transform transition-all duration-300 ${
           open
             ? "opacity-100 translate-y-0"
             : "opacity-0 -translate-y-5 pointer-events-none"
